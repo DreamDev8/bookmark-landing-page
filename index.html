@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="./scss/style.css" />
+
+    <!--Font Awesome-->
+    <script src="https://use.fontawesome.com/releases/v6.0.0-beta2/js/all.js"></script>
+
+    <title>Frontend Mentor | Bookmark landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- navbar -->
+      <nav class="nav-container container">
+        <div class="nav-center">
+          <!-- nav mobile -->
+          <div class="nav-mobile">
+            <img
+              src="./images/logo-bookmark.svg"
+              alt="logo-bookmark"
+              class="logo"
+            />
+            <button class="nav-toggle">
+              <img src="./images/icon-hamburger.svg" alt="navigation" />
+            </button>
+          </div>
+
+          <!-- drop down menu -->
+          <div class="menu-toggle">
+            <div class="links-toggle">
+              <ul>
+                <li>
+                  <a href="#" class="features">Features</a>
+                </li>
+                <li>
+                  <a href="#" class="pricing">Pricing</a>
+                </li>
+                <li>
+                  <a href="#" class="contact">Contact</a>
+                </li>
+                <button>Login</button>
+              </ul>
+            </div>
+            <div class="social">
+              <img src="./images/icon-facebook.svg" alt="facebook" />
+              <img src="./images/icon-twitter.svg" alt="twitter" />
+            </div>
+          </div>
+
+          <!-- links desktop -->
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="#">Features</a>
+              </li>
+              <li>
+                <a href="#">Pricing</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+              <button class="login-btn">Login</button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- hero image and copy -->
+      <section class="hero-container margin-block spacing-top-lg">
+        <div class="grid">
+          <div class="hero-img">
+            <img
+              src="./images/illustration-hero.svg"
+              alt="illustration-main-image"
+            />
+          </div>
+          <div class="hero-copy">
+            <div class="spacing-copy-top spacing-copy-bottom">
+              <h1 class="font-primary-heading font-weight-500">
+                A Simple Bookmark Manager
+              </h1>
+              <p class="body-copy-mobile-p body-copy-desktop-p">
+                A clean and simple interface to organize your favourite
+                websites. Open a new browser tab and see your sites load
+                instantly. Try it for free.
+              </p>
+            </div>
+            <div class="hero-btns">
+              <button class="btn-hero-blue">Get it on Chrome</button>
+              <button class="btn-hero-white">Get it on Firefox</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- slider -->
+      <section class="slider-container margin-block">
+        <div class="slider-intro">
+          <div class="spacing-copy-top spacing-copy-bottom">
+            <h2 class="font-secondary-heading font-weight-500">Features</h2>
+            <p class="body-copy-mobile-p body-copy-desktop-p">
+              Our aim is to make it quick and easy for you to access your
+              favourite websites. Your bookmarks sync between your devices so
+              you can access them on the go.
+            </p>
+          </div>
+        </div>
+
+        <div class="slider">
+          <!-- slider buttons -->
+          <div class="btns-slider-container spacing-bottom-lg">
+            <button class="btn-slider active" data-id="bookmarking">
+              Simple Bookmarking
+            </button>
+            <button class="btn-slider" data-id="searching">
+              Speedy Searching
+            </button>
+            <button class="btn-slider" data-id="sharing">Easy Sharing</button>
+          </div>
+
+          <!-- slider content -->
+          <div class="grid content active" id="bookmarking">
+            <div class="slider-img">
+              <img
+                src="./images/illustration-features-tab-1.svg"
+                alt="illustration-feature-image"
+              />
+            </div>
+            <div class="slider-copy spacing-copy-top spacing-copy-bottom">
+              <h2 class="font-secondary-heading font-weight-500 spacing-top-lg">
+                Bookmark in one click
+              </h2>
+              <p class="body-copy-mobile-p body-copy-desktop-p">
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <button class="btn-blue-sm">More Info</button>
+            </div>
+          </div>
+
+          <div class="grid content" id="searching">
+            <div class="slider-img">
+              <img
+                src="./images/illustration-features-tab-2.svg"
+                alt="illustration-feature-image"
+              />
+            </div>
+            <div class="slider-copy spacing-copy-top spacing-copy-bottom">
+              <h2 class="font-secondary-heading font-weight-500">
+                Intelligent search
+              </h2>
+              <p class="body-copy-mobile-p body-copy-desktop-p">
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.
+              </p>
+              <button class="btn-blue-sm">More Info</button>
+            </div>
+          </div>
+
+          <div class="grid content" id="sharing">
+            <div class="slider-img">
+              <img
+                src="./images/illustration-features-tab-3.svg"
+                alt="illustration-feature-image"
+              />
+            </div>
+            <div class="slider-copy spacing-copy-top spacing-copy-bottom">
+              <h2 class="font-secondary-heading font-weight-500">
+                Share your bookmarks
+              </h2>
+              <p class="body-copy-mobile-p body-copy-desktop-p">
+                Easily share your bookmarks and collections with others. Create
+                a shareable link that you can send at the click of a button.
+              </p>
+              <button class="btn-blue-sm">More Info</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- card -->
+      <section class="card-container container margin-block">
+        <div class="spacing-copy-top spacing-bottom-lg">
+          <h2 class="font-secondary-heading font-weight-500">
+            Download the extension
+          </h2>
+          <p class="body-copy-mobile-p body-copy-desktop-p">
+            We’ve got more browsers in the pipeline. Please do let us know if
+            you’ve got a favourite you’d like us to prioritize.
+          </p>
+        </div>
+
+        <div class="grid">
+          <div class="card">
+            <div class="spacing-copy-bottom">
+              <img src="./images/logo-chrome.svg" alt="chrome" />
+            </div>
+            <div class="spacing-card">
+              <h3>Add to Chrome</h3>
+              <p class="body-copy-mobile-p">Minimum version 62</p>
+            </div>
+            <button class="btn-card">Add & Install Extension</button>
+          </div>
+
+          <div class="card">
+            <div class="spacing-copy-bottom">
+              <img src="./images/logo-firefox.svg" alt="firefox" />
+            </div>
+            <div class="spacing-card">
+              <h3>Add to Firefox</h3>
+              <p class="body-copy-mobile-p">Minimum version 55</p>
+            </div>
+            <button class="btn-card">Add & Install Extension</button>
+          </div>
+
+          <div class="card">
+            <div class="spacing-copy-bottom">
+              <img src="./images/logo-opera.svg" alt="opera" />
+            </div>
+            <div class="spacing-card">
+              <h3>Add to Opera</h3>
+              <p class="body-copy-p">Minimum version 46</p>
+            </div>
+            <button class="btn-card">Add & Install Extension</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- q & a -->
+      <section class="q-a-container container margin-block">
+        <div class="grid">
+          <div class="all-q-a-intro">
+            <div class="spacing-copy-top spacing-bottom-lg">
+              <h2 class="font-secondary-heading font-weight-500">
+                Frequently Asked Questions
+              </h2>
+              <p class="body-copy-mobile-p body-copy-desktop-p">
+                Here are some of our FAQs. If you have any other questions you’d
+                like answered please feel free to email us.
+              </p>
+            </div>
+
+            <div class="all-q-a">
+              <article class="single-q-a">
+                <div class="q-flex question">
+                  <p class="body-copy-desktop-p">What is Bookmark?</p>
+                  <button class="question-btn">
+                    <span
+                      ><i class="fa-solid fa-chevron-down open-btn"></i
+                    ></span>
+                    <span
+                      ><i class="fa-solid fa-chevron-up close-btn"></i
+                    ></span>
+                  </button>
+                </div>
+                <div class="answer">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Fusce tincidunt justo eget ultricies fringilla. Phasellus
+                    blandit ipsum quis quam ornare mattis.
+                  </p>
+                </div>
+              </article>
+
+              <article class="single-q-a">
+                <div class="q-flex question">
+                  <p class="body-copy-desktop-p">
+                    How can I request a new browser?
+                  </p>
+                  <button class="question-btn">
+                    <span
+                      ><i class="fa-solid fa-chevron-down open-btn"></i
+                    ></span>
+                    <span
+                      ><i class="fa-solid fa-chevron-up close-btn"></i
+                    ></span>
+                  </button>
+                </div>
+                <div class="answer">
+                  <p>
+                    Vivamus luctus eros aliquet convallis ultricies. Mauris
+                    augue massa, ultricies non ligula. Suspendisse imperdiet.
+                    Vivamus luctus eros aliquet convallis ultricies. Mauris
+                    augue massa, ultricies non ligula. Suspendisse imperdie
+                    tVivamus luctus eros aliquet convallis ultricies. Mauris
+                    augue massa, ultricies non ligula. Suspendisse imperdiet.
+                  </p>
+                </div>
+              </article>
+
+              <article class="single-q-a">
+                <div class="q-flex question">
+                  <p class="body-copy-desktop-p">Is there a mobile app?</p>
+                  <button class="question-btn">
+                    <span
+                      ><i class="fa-solid fa-chevron-down open-btn"></i
+                    ></span>
+                    <span
+                      ><i class="fa-solid fa-chevron-up close-btn"></i
+                    ></span>
+                  </button>
+                </div>
+                <div class="answer">
+                  <p>
+                    Sed consectetur quam id neque fermentum accumsan. Praesent
+                    luctus vestibulum dolor, ut condimentum urna vulputate eget.
+                    Cras in ligula quis est pharetra mattis sit amet pharetra
+                    purus. Sed sollicitudin ex et ultricies bibendum.
+                  </p>
+                </div>
+              </article>
+
+              <article class="single-q-a">
+                <div class="q-flex question">
+                  <p class="body-copy-desktop-p">
+                    What about other Chromium browsers?
+                  </p>
+                  <button class="question-btn">
+                    <span
+                      ><i class="fa-solid fa-chevron-down open-btn"></i
+                    ></span>
+                    <span
+                      ><i class="fa-solid fa-chevron-up close-btn"></i
+                    ></span>
+                  </button>
+                </div>
+                <div class="answer">
+                  <p>
+                    Integer condimentum ipsum id imperdiet finibus. Vivamus in
+                    placerat mi, at euismod dui. Aliquam vitae neque eget nisl
+                    gravida pellentesque non ut velit.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <button class="btn-blue-sm btn-q-a">More Info</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- input -->
+      <section class="input-container">
+        <div class="grid">
+          <div>
+            <div class="spacing-copy-top spacing-copy-bottom">
+              <h3>35,000+ already joined</h3>
+              <h2 class="font-secondary-heading font-weight-500">
+                Stay up-to-date with what we’re doing
+              </h2>
+            </div>
+            <form>
+              <div class="input-form">
+                <input
+                  class="input-text"
+                  type="text"
+                  placeholder="Enter your email address"
+                />
+                <img
+                  src="./images/icon-error.svg"
+                  alt="error-icon"
+                  class="error-icon"
+                />
+                <p class="error-text"></p>
+              </div>
+              <button type="submit" class="btn-input">Contact Us</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer-container">
+      <div class="grid">
+        <div class="logo-links-container">
+          <div class="footer-logo">
+            <a href="#">
+              <img src="./images/logo-bookmark-white.svg" alt="logo bookmark" />
+            </a>
+          </div>
+
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-social">
+          <a aria-label="facebook" href="#">
+            <img
+              src="./images/icon-facebook.svg"
+              alt="facebook"
+              data-id="facebook"
+            />
+          </a>
+          <a aria-label="twitter" href="#">
+            <img
+              src="./images/icon-twitter.svg"
+              alt="twitter"
+              data-id="twitter"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="attribution">
+        <p>
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="https://github.com/DreamDev8">DreamDev</a>.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

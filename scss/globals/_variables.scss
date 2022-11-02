@@ -1,0 +1,47 @@
+:root {
+
+  // color
+  --soft-blue: hsl(231, 69%, 60%);
+  --soft-red: hsl(0, 94%, 66%);
+  --grayish-blue: hsl(229, 8%, 60%);
+  --dark-grayish-blue: hsl(229, 5%, 45%);
+  --very-dark-blue: hsl(229, 31%, 21%);
+  --white: hsl(0, 100%, 100%);
+  --font-weight: 400;
+  --font-weight: 500;
+
+  // font-family
+  --ff-primary: "Rubik", sans-serif;
+
+  // font-weight
+  --fw-400: 400;
+  --fw-500: 500;
+
+  // font-size
+  --fs-body-mobile: 1rem;
+  --fs-nav-mobile: 1.25rem;
+  --fs-h1-mobile: 1.875rem;
+  --fs-h2-mobile: 1.5625rem;
+
+  --fs-body-desktop: 1.125rem;
+  --fs-nav-desktop: 0.875rem;
+  --fs-h1-desktop: 3.5rem;
+  --fs-h2-desktop: 2.1875rem;
+  --fs-btn: 0.9375rem;
+  --fs-btn-slider: 1.0625rem;
+
+  // margin
+  --margin-section: 9.375rem;
+  --side-margin-mobile: 1.875rem;
+  --margin-copy: 2.1875rem;
+  --margin-copy-bottom-lg: 4.375rem;
+  --margin-top-lg: 5rem;
+  --margin-card: 0.625rem;
+
+
+  // max-width
+  --max-width: 80.3125rem;
+  --max-width-nav: 69.0625rem;
+  --max-width-card: 57.1875rem;
+  --max-width-q-a: 33.75rem;
+}

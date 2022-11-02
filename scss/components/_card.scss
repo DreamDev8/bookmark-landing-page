@@ -1,0 +1,56 @@
+.card-container {
+  img {
+    margin-inline: auto;
+  }
+}
+
+.card {
+  border-radius: 0.9375rem;
+  box-shadow: 0 0.25rem 0.625rem hsl(231deg 30% 90%);
+  padding: 1.5625rem 1.25rem;
+  margin-bottom: 2.8125rem;
+
+  & :nth-child(2) {
+    p {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        height: 4.375rem;
+        background-image: url(../images/bg-dots.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+      }
+    }
+  }
+
+  button {
+    margin-top: 4.375rem;
+  }
+}
+
+@media screen and (min-width: 59.375em) {
+  .card-container {
+    margin-top: 16.25rem;
+
+    .grid {
+      gap: 2.1875rem;
+      height: 31.875rem;
+
+      & :nth-of-type(2) {
+        align-self: center;
+      }
+
+      & :nth-of-type(3) {
+        align-self: end;
+      }
+    }
+  }
+
+  .card {
+    width: 18.375rem;
+    height: 22.8125rem;
+  }
+}
